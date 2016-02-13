@@ -1,0 +1,99 @@
+body{
+	margin-top:50px;
+	overflow:hidden;
+}
+.red{
+	background-color:red;
+}
+.love-text{
+	display:none;
+	position:absolute;
+	text-align:center;
+}
+.arrow{
+	z-index: -1;
+	position: absolute;
+    top: 100px;
+    left: -100px;
+    border-top: 100px solid transparent;
+    border-bottom: 100px solid transparent;
+    border-left: 100px solid black;
+}
+.bolt{
+	width: 510px;
+    height: 20px;
+    top: -10px;
+    right: 100px;
+    position: absolute;
+    background-color: black;
+}
+.feather{
+	right: 600px;
+    position: absolute;
+    top: -100px;
+    width: 100px;
+    border-top-right-radius: 99px;
+    border-bottom-right-radius: 99px;
+    border-top: 100px solid black;
+    border-bottom: 100px solid black;
+    border-left: 54px solid transparent;
+}
+
+.left-heart{
+	position: absolute;
+    display: block;
+    width: 200px;
+    height: 254px;
+    border-top-right-radius: 70px;
+    border-top-left-radius: 100px;
+    border-bottom-left-radius: 140px;
+}
+.left-heart div{
+	position: absolute;
+	top:200px;
+	right:0;
+	border-bottom: 275px solid transparent;
+    border-right: 170px solid red;
+}
+.right-heart{
+	position: absolute;
+    display: block;
+    width: 200px;
+    height: 254px;
+    border-top-left-radius: 70px;
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 140px;
+}
+.right-heart div{
+	position: absolute;
+    top: 200px;
+    border-bottom: 275px solid transparent;
+    border-left: 170px solid red;
+}
+.flash {
+  -moz-animation: flash 1s ease-out;
+  -moz-animation-iteration-count: 100;
+
+  -webkit-animation: flash 1s ease-out;
+  -webkit-animation-iteration-count: 100;
+
+  -ms-animation: flash 1s ease-out;
+  -ms-animation-iteration-count: 100;
+}
+@-webkit-keyframes flash {
+    0% { color: none; }
+    50% { color: #fbf8b2; }
+    100% { color: none; }
+}
+
+@-moz-keyframes flash {
+    0% { color: none; }
+    50% { color: #fbf8b2; }
+    100% { color: none; }
+}
+
+@-ms-keyframes flash {
+    0% { color: none; }
+    50% { color: #fbf8b2; }
+    100% { color: none; }
+}
