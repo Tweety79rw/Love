@@ -1,6 +1,6 @@
 var parseAddress = function(){
 	var result = {};
-	var queryArray = window.location.search.replace('?','').split('&');
+	var queryArray = decodeURIComponent(window.location.search.replace('?','').replace(/\+/g,' ')).split('&');
 	queryArray.forEach(function(element){
 		var parts = element.split('=');
 		result[parts[0]] = parts[1];
